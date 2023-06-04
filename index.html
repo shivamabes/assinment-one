@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Player</title>
+</head>
+<body>
+  <input type="file" id="videoFile" accept="video/*"><br><br>
+  <button onclick="playVideo()">Play</button>
+  <button onclick="stopVideo()">Stop</button>
+  <button onclick="forwardVideo()">Forward 10s</button>
+  <button onclick="backwardVideo()">Backward 10s</button><br><br>
+  <input type="number" id="jumpTime" placeholder="Jump to (in seconds)">
+  <button onclick="jumpToTime()">GO</button><br><br>
+  <video id="videoPlayer" width="640" height="360" controls></video>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
